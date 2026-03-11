@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        os: [debian11, debian12, debian13, ubuntu2004, ubuntu2204, ubuntu2404]
+        os: [debian13]
 
     steps:
     - uses: actions/checkout@v1
