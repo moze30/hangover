@@ -2,16 +2,6 @@ name: deb
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - '**'
-    paths-ignore:
-      - 'benchmarks/**'
-      - 'docs/**'
-      - '.github/ISSUE_TEMPLATE/**'
-      - 'README.md'
-  release:
-    types: [published]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.sha }}
